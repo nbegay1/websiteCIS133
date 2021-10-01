@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+/* Hero Section */
+#hero{
+    background-image: url(./images/IMG-9896.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1) {
+    animation-delay: 1s;   
+}
+#hero h1:nth-child(2) {
+    animation-delay: 1.5s;   
+}
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 3s;
+}
+#hero h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+#hero h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: crimson; 
+
+
+}
+
+/* End Hero Section */
+
+
+
+
+/* Keyframes */
+@keyframes text_reveal_box{
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100% {
+        color: white;
+
+    }
+}
+/* End Keyframes */
+
+/* Nav Bar */
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #fff;
+    z-index: 10;
+}
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: white;
+    border-radius: 6px;
+    color: crimson;
+}
+nav ul a.active{
+    background:crimson;
+    color: #fff;
+    border-radius: 6px;
+
+}
+section{
+    width: 100%;
+    background: url();
+    background-size: cover;
+    background-position: center;
+}
+/* End Nav Bar*/
+
+/* Gallery*/
+
+    .holdingcontainer{
+      max-width: 100%;
+      display: flex;
+      background: crimson;
+      padding: 50px;
+      box-sizing: border-box;
+      flex-direction: row;
+    }
+
+    .internalcontainerL{
+      flex: 1;
+      background:white;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+      min-height: 100%;
+    }
+
+    .internalcontainerM{
+      flex: 1;
+      background:white;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    .internalcontainerR{
+      flex: 1;
+      background: white;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+    }
+    /* End gallery */
