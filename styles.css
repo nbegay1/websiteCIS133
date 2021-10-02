@@ -282,11 +282,11 @@ section{
     }
     .contact-section h1{
         text-align: center;
-        color: black;
+        color: white;
     }
     .border{
         width: 100px;
-        height: 10px;
+        height: 15px;
         background: #34495e;
         margin: 40px auto;
     }
