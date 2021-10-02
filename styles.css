@@ -276,7 +276,7 @@ section{
 
     /* Contact Section */
     .contact-section{
-        background: url(/images/drum.jpg) no-repeat center;
+        background: url(./images/drum.jpg) no-repeat center;
         background-size: cover;
         padding: 40px 0;
     }
@@ -329,7 +329,7 @@ section{
  /* About Section */
 
  .about-section{
-     background: url(/images/mmiw.jpg);
+     background: url(./images/mmiw.jpg);
      background-size: 55%;
      background-color: #fdfdfd;
      overflow: hidden;
@@ -388,7 +388,7 @@ section{
  section{
      width: 100%;
      height: 100vh;
-     background: url(/images/walking.jpg);
+     background: url(./images/walking.jpg);
      background-size: cover;
  }
  section .leftbox{
@@ -501,7 +501,7 @@ section .events ul li .details a:hover{
 /* Donate Section */
 
 .donate-section{
-    background: url(/images/reddress.jpg);
+    background: url(./images/reddress.jpg);
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
