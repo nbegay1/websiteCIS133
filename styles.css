@@ -305,7 +305,7 @@ section{
         background: #fff;
         padding: 20px 40px;
         outline: none;
-        color: #fff;
+        color: #1111;
         transition: 0.5s;
     }
     .contact-form-text:focus{
