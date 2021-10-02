@@ -297,7 +297,7 @@ section{
         overflow: hidden;
     }
     .contact-form-text{
-        display: black;
+        display: #000000;
         width: 100%;
         box-sizing: border-box;
         margin: 16px 0;
