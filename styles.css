@@ -110,8 +110,6 @@ p{
 /* End Hero Section */
 
 
-
-
 /* Keyframes */
 @keyframes text_reveal_box{
     50% {
@@ -191,9 +189,46 @@ section{
     background-size: cover;
     background-position: center;
 }
+@media screen and (max-width: 1200px) {
+    nav ul li {
+                 
+    }
+    nav .logo{
+        padding-top: 22px; 
+        height: 80px;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: crimson;
+        padding-left: 1px;
+    }
+    nav ul{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li a{
+        line-height: 80px;
+        color: #fff;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav ul li a:hover{
+        background: white;
+        border-radius: 6px;
+        color: crimson;
+    }
+} 
+
 /* End Nav Bar*/
 
-/* Gallery*/
+/* Picture layout Section*/
 
     .holdingcontainer{
       max-width: 100%;
@@ -237,4 +272,258 @@ section{
         flex-direction: column-reverse;
       }
     }
-    /* End gallery */
+    /* End Picture layout Section*/
+
+    /* Contact Section */
+    .contact-section{
+        background: url(/images/drum.jpg) no-repeat center;
+        background-size: cover;
+        padding: 40px 0;
+    }
+    .contact-section h1{
+        text-align: center;
+        color: black;
+    }
+    .border{
+        width: 100px;
+        height: 10px;
+        background: #34495e;
+        margin: 40px auto;
+    }
+    .contact-form{
+        max-width: 600px;
+        margin: auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+    .contact-form-text{
+        display: black;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        border: 0;
+        background: #fff;
+        padding: 20px 40px;
+        outline: none;
+        color: #fff;
+        transition: 0.5s;
+    }
+    .contact-form-text:focus{
+        box-shadow: 0 0 10px 4px #34495e;
+    }
+    .contact-form-btn{
+        float: right;
+        border: 0;
+        background: crimson;
+        color: #fff;
+        padding: 12px 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .contact.form-btn:hover{
+        background: #34495e;
+    }
+    /* End Contact Section */
+
+ /* About Section */
+
+ .about-section{
+     background: url(/images/mmiw.jpg);
+     background-size: 55%;
+     background-color: #fdfdfd;
+     overflow: hidden;
+     padding: 100px 0;
+ }
+ .inner-container{
+     width: 55%;
+     float: right;
+     background-color: #fdfdfd;
+     padding: 150px;
+ }
+ .inner-container h1{
+     margin-bottom: 30px;
+     font-size: 30px;
+     font-weight: 900;
+ }
+ .text{
+     font-size: 13px;
+     color: #545454;
+     line-height: 30px;
+     text-align: justify;
+     margin-bottom: 40px;
+ }
+ .skills{
+     display: flex;
+     justify-content: space-between;
+     font-weight: 700;
+     font-size: 13px;
+ }
+ @media screen and (max-width:1200px){
+     .inner-container{
+         padding: 80px;
+     }
+ }
+ @media screen and (max-width:1000px){
+     .about-section{
+         background-size: 100%;
+         padding: 100px 40px;
+     }
+     .inner-container{
+         width: 100%;
+     }
+ }
+ @media screen and (max-width:600px){
+     .about-section{
+         padding: 0;
+     }
+     .inner-container{
+         padding: 60px;
+     }
+ }
+
+ /* End ABout Section */
+
+ /* News Section */
+ section{
+     width: 100%;
+     height: 100vh;
+     background: url(/images/walking.jpg);
+     background-size: cover;
+ }
+ section .leftbox{
+     width: 50%;
+     height: 100%;
+     float: left;
+     padding: 50px;
+     box-sizing: border-box;
+ }
+ section .leftbox .content{
+     color: #fff;
+     background: rgba(0, 0, 0, .5);
+     padding: 40px;
+     transition: .5s;
+ }
+ section .leftbox .content:hover{
+     background: crimson;
+ }
+ section .leftbox .content h1{
+     margin: 0;
+     padding: 0;
+     font-size: 50px;
+     text-transform: uppercase;
+ }
+ section .leftbox .content p{
+     margin: 10px 0 0;
+     padding: 0;
+ }
+ section .events{
+     position: relative;
+     width: 50%;
+     height: 100%;
+     background: rgba(0, 0, 0, .5);
+     float: right;
+     box-sizing: border-box;
+ }
+ section .events ul li{
+     list-style: none;
+     background: #fff;
+     box-sizing: border-box;
+     height: 200px;
+     margin: 15px 0
+ }
+ section .events ul li .time{
+     position: relative;
+     padding: 20px;
+     background: #262626;
+     box-sizing: border-box;
+     width: 30%;
+     height: 100%;
+     float: left;
+     text-align: center;
+     transition: .5s;
+ }
+ section .events ul li:hover .time{
+     background: crimson;
+ }
+ section .events ul li .time h2{
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff;
+     font-size: 60px;
+     line-height: 30px;
+ }
+ section .events ul li .time h2 span{
+     font-size: 30px;
+ }
+ section .events ul li .details{
+     padding: 20px;
+     background: #fff;
+     box-sizing: border-box;
+     width: 70%;
+     height: 100%;
+     float: left;
+ }
+ section .events ul li .details h3{
+     position: relative;
+     margin: 0;
+     padding: 0;
+     font-size: 22px;
+ }
+ section .events ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+section .events ul li .details a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #111;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+    float: right;
+}
+section .events ul li .details a:hover{
+    background: crimson;
+    color: #fff;
+    border-color: crimson;
+}
+/* End News Section */
+
+/* Donate Section */
+
+.donate-section{
+    background: url(/images/reddress.jpg);
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* End Donate Section */
