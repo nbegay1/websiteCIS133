@@ -334,7 +334,6 @@ section{
      background-color: #fdfdfd;
      overflow: hidden;
      padding: 100px 0;
-     object-fit: cover;
  }
  .inner-container{
      width: 55%;
