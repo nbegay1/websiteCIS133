@@ -278,7 +278,7 @@ section{
     .contact-section{
         background: url(./images/drum.jpg) no-repeat center;
         background-size: cover;
-        padding: 100px 0;
+        padding: 120px 0;
     }
     .contact-section h1{
         text-align: center;
@@ -330,7 +330,7 @@ section{
 
  .about-section{
      background: url(./images/mmiw.jpg);
-     background-size: 80%;
+     background-size: 90%;
      background-color: #fdfdfd;
      overflow: hidden;
      padding: 100px 0;
