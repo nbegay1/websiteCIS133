@@ -330,10 +330,11 @@ section{
 
  .about-section{
      background: url(./images/mmiw.jpg);
-     background-size: 55%;
+     background-size: ;
      background-color: #fdfdfd;
      overflow: hidden;
      padding: 100px 0;
+     object-fit: cover;
  }
  .inner-container{
      width: 55%;
