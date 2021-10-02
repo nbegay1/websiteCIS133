@@ -19,7 +19,7 @@ a {
     justify-content: center;
 }
 img{
-    height: 100%;
+    height: 70%;
     width: 100%;
     object-fit: cover;
 }
@@ -231,7 +231,7 @@ section{
 /* Picture layout Section*/
 
     .holdingcontainer{
-      max-width: 70%;
+      max-width: 100%;
       display: flex;
       background: crimson;
       padding: 50px;
