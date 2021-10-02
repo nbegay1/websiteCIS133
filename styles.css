@@ -232,7 +232,7 @@ section{
 
     .holdingcontainer{
       max-width: 100%;
-      display: flex;
+      display: inline;
       background: crimson;
       padding: 50px;
       box-sizing: border-box;
