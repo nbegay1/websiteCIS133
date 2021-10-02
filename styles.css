@@ -231,7 +231,7 @@ section{
 /* Picture layout Section*/
 
     .holdingcontainer{
-      max-width: 100%;
+      max-width: 70%;
       display: flex;
       background: crimson;
       padding: 50px;
