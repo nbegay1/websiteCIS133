@@ -399,8 +399,8 @@ section{
      box-sizing: border-box;
  }
  section .leftbox .content{
-     color: #fff;
-     background: rgba(0, 0, 0, .5);
+     color: #262626;
+     background: rgb(255, 255, 255);
      padding: 40px;
      transition: .5s;
  }
